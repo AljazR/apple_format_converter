@@ -1,4 +1,4 @@
-# apple_format_conveter
+# apple_format_converter
 The script converts all HEIC files in a directory to JPG and MOV files to MP4.
 All converted files are saved in a new directory, including other files that are not converted.
 
