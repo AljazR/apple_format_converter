@@ -17,11 +17,10 @@ from pillow_heif import register_heif_opener
 
 register_heif_opener()
 
-# directory = '<<PATH>>'
-directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/convert_from_heic/test'
-
-# new_directory = '<<NEW PATH>>'
-new_directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/convert_from_heic/test - converted'
+# Set directory
+directory = '<<PATH>>'
+# Set new directory
+new_directory = '<<NEW PATH>>'
 
 # Create new directory if it doesn't exist and exit if it does - it can be dangerous to overwrite files
 if not os.path.exists(new_directory):
