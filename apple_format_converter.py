@@ -18,9 +18,9 @@ from pillow_heif import register_heif_opener
 register_heif_opener()
 
 # Set directory
-directory = '<<PATH>>'
+directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test'
 # Set new directory
-new_directory = '<<NEW PATH>>'
+new_directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test - converted'
 
 # Create new directory if it doesn't exist and exit if it does - it can be dangerous to overwrite files
 if not os.path.exists(new_directory):
@@ -41,6 +41,7 @@ for filename in os.listdir(directory):
 # Get number of files in directory
 num_files = len([f for f in os.listdir(directory)if os.path.isfile(os.path.join(directory, f))])
 
+print('\n')
 for i, filename in enumerate(os.listdir(directory), 1):
     # Print current status
     print('\033[F', end='')
