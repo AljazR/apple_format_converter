@@ -18,9 +18,11 @@ from pillow_heif import register_heif_opener
 register_heif_opener()
 
 # Set directory
-directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test'
+# directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test'
+directory = input('Enter the path to the directory: ') 
 # Set new directory
-new_directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test - converted'
+# new_directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test - converted'
+new_directory = directory + " - converted"
 
 # Create new directory if it doesn't exist and exit if it does - it can be dangerous to overwrite files
 if not os.path.exists(new_directory):
