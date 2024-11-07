@@ -4,6 +4,9 @@
 # Usage:
 # 1. Change directory and new_directory variables to the desired paths
 # 2. Run the script with: python3 heic_converter.py
+# or
+# 1. Run the script with: python3 heic_converter.py
+# 2. Enter the path to the directory containing media files you want to convert.
 
 # Requirements:
 # Pillow: pip install Pillow
@@ -19,7 +22,7 @@ register_heif_opener()
 
 # Set directory
 # directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test'
-directory = input('Enter the path to the directory: ') 
+directory = input('Enter the path to the directory: ')
 # Set new directory
 # new_directory = '/mnt/c/Users/aljoz/Desktop/FRI/projects/apple_format_converter/test - converted'
 new_directory = directory + " - converted"
